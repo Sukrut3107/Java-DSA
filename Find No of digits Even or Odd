@@ -1,0 +1,25 @@
+public class NoOfDigits {
+    public static void main(String[] args) {
+        int n = 123;
+        System.out.println(digits(n));
+        System.out.println(evenOrNot(n));
+        
+    }
+    static int digits(int n){ //most efficient way
+        if(n<0){
+           n = n * -1;
+        }
+        return (int)(Math.log10(n))+1;
+    }
+
+
+    //if you want to find digits even or not
+    static boolean evenOrNot(int num){
+        int result = digits(num);
+        if(result%2==0){
+            return true;
+        }
+        return false;
+    }
+
+}
