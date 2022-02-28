@@ -1,0 +1,16 @@
+public class Fibonanci{
+public static void main(String[] args){
+  Scanner in = new Scanner(System.in);
+  int num = in.nextInt();
+  int prevnum = 0; 
+  int nextnum = 1; 
+  
+  for(int i=0; i<num; i++){
+    System.out.print(prevnum+" ");
+    int sum = prevnum + nextnum;
+    prevnum = nextnum;
+    nextnum = sum;
+  }
+  
+}
+}
