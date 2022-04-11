@@ -1,0 +1,45 @@
+    package LinkedList;
+    
+    public class Main {
+        public static void main(String[] args) {
+        Node head = null;
+        head = insertAtFront(head,50);
+        head = insertAtFront(head,40);
+        head = insertAtFront(head,30);
+        head = insertAtFront(head,20);
+        head = insertAtFront(head,10);
+        head = insertAtFront(head,5);
+        printLinkedList(head);
+    
+        head = deleteAtFront(head);
+        printLinkedList(head);
+        }
+        public static Node insertAtFront(Node head,int data){
+            Node nn = new Node(data);
+            nn.setNext(null);
+            if(head == null){
+                head = nn;
+            }
+            else {
+                nn.setNext(head);
+                head = nn;
+            }
+            return head;
+        }
+    
+        public static Node deleteAtFront(Node head){
+            if(head!=null){
+                head = head.getNext();
+                return head;
+            }
+            return head;
+        }
+        public static void printLinkedList(Node head){
+            System.out.println("---Printing the LinkedList---");
+            Node curr = head;
+            while (curr !=null){
+                System.out.println(curr.getData());
+                curr = curr.getNext();
+            }
+        }
+    }
