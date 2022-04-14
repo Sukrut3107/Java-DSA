@@ -1,16 +1,16 @@
 import java.util.Scanner;
-public class FiboUsingRecursion {
-   public static void main(String[] args){
-   Scanner sc = new Scanner(System.in);
-   int num = sc.nextInt();
-   for(int i=0; i<num; i++){
-      System.out.println(fiboRec(i));
-   }
-   }
-   static int fiboRec(int num){
-    if(num<=1){
-      return num;
+
+public class Fibonanci {
+    public static void main(String[] args) {
+        System.out.println("Enter nth Number for Fibonanci Series: ");
+        Scanner in = new Scanner(System.in);
+        int num = in.nextInt();
+        System.out.println(Fibo(num));
     }
-    return fiboRec(num-1)+fiboRec(num-2);
-   }
+    public static int Fibo(int n) {
+        if (n < 2) {
+            return n;
+        }
+        return Fibo(n - 1) + Fibo(n - 2);
+    }
 }
