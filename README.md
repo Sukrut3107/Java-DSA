@@ -1,2 +1,4 @@
 # Java-DSA
-Useful Java and DSA codes
+Repo for Data Structures and Algorithm programs.
+Fork the Repo if you want to contribute to it. 
+
