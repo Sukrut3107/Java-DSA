@@ -9,13 +9,20 @@ Fork the Repo if you want to contribute to it.
 * [Node](LinkedList/Node)
 
 <b>2. [Recursion](Recursion)</b>
-* [Factorial using Recursion](Recursion/FactorialusingRecursion)
+* [Factorial Using Recursion](Recursion/FactorialusingRecursion)
 * [Fibonanci With Recusrion](Recursion/FibonanciWithRecusrion)
 * [Increasing Decreasing Using Recursion](Recursion/IncreasingDecreasing_Using_Recursion.java)
 * [Subset Sum](Recursion/SubsetSum.java)
 
-<b>3. [Searching](Searching)</b>
+<b>3. [Searching](Searching)</b> 
+* [Binary Serach](Searching/BinarySerach)
+* [Linear Serach](Searching/LinearSerach)
 
 <b>4. [Sliding Window](SlidingWindow)</b>
+* [Sliding Window Max Sum](SlidingWindow/SlidingWindowMaxSum.java)
 
-<b>1. [Sorting](Sorting)</b>
+
+
+<b>5. [Sorting](Sorting)</b>
+* [Bubble Sort](Sorting/BubbleSort.java)
+* [Cyclic Sort](Sorting/CyclicSort)
