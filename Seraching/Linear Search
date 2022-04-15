@@ -1,0 +1,24 @@
+public class SerachElementAndReturnElement {
+    public static void main(String[] args) {
+        int []  nums = {14,879,46,21,8,13,21,4,28,99};
+        int search = 3;
+        int ans = Element(nums,search);
+        System.out.println(ans);
+    }
+    static int Element(int a[],int target){
+        if(a.length == 0){
+            return -1;
+        }
+        //run for loop
+        for (int i = 0; i < a.length; i++) {
+            //check for element at every index equals to target
+            int element = a[i];
+            if(element == target){
+                return element;
+            }
+        }
+        //this will execute if none of the retun statements of above executed
+        //hence target doesent found
+        return Integer.MAX_VALUE;
+    }
+}
